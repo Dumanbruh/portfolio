@@ -1,9 +1,17 @@
+"use client"
+
 import React from 'react'
 import Wrapper from '../components/ui/wrapper'
+import { motion } from 'framer-motion'
 
 export default function About() {
     return (
-        <div className="w-full">
+        <motion.div
+            initial={{ y: -40, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="bg-neutral-800 w-full max-w-2xl p-8 rounded-lg shadow-lg"
+        >
             <h3 className="text-base font-semibold mb-2">• About</h3>
 
 
@@ -33,6 +41,6 @@ export default function About() {
                     </div>
                 </div>
             </Wrapper>
-        </div>
+        </motion.div>
     )
 }

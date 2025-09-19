@@ -20,18 +20,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en"
+      suppressHydrationWarning={true}
+      data-lt-installed="true"
+    >
       <body
         className={`${inter.variable} ${inter.variable} antialiased`}
       >
         <Navbar />
-        <div className="flex flex-col items-center justify-center p-10">
-          <div className="bg-neutral-800 w-full max-w-2xl p-8 rounded-lg shadow-lg">
-            {children}
-          </div>
+        <div className="flex flex-col items-center w-full justify-center px-4 py-6 sm:px-8 sm:py-10 md:px-16 md:py-12 mx-auto">
+          {children}
         </div>
         <Footer />
       </body>
-    </html>
+    </html >
   );
 }
