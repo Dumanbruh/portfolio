@@ -11,8 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Duman Marlambekov's Portfolio",
-  description: "Welcome to my portfolio website! I'm Duman Marlambekov, a full-stack developer. Explore my projects, skills, and experience as you navigate through my site.",
+  title: "Portfolio",
+  description: "I'm Duman Marlambekov, a full-stack developer. Welcome to my portfolio!",
 };
 
 export default function RootLayout({

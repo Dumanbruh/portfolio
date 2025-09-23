@@ -8,7 +8,7 @@ interface WrapperProps {
 
 const Wrapper = ({ title, children }: WrapperProps) => {
     return (
-        <div className="bg-neutral-900 p-4 rounded-lg shadow-md w-full">
+        <div className="bg-gray-400 dark:bg-neutral-900 p-4 rounded-lg shadow-md w-full">
             <h2 className="text-2xl font-semibold mb-2">• {title}</h2>
             {children}
         </div>

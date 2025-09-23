@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="flex flex-col items-center justify-center mt-4">
-            <div className="flex justify-between bg-neutral-800 w-full max-w-2xl p-8 rounded-lg shadow-lg">
+            <div className="flex justify-between bg-blue-800 dark:bg-neutral-800 w-full max-w-2xl p-8 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-semibold mb-2">Socials</h2>
                 <div className='flex items-center space-x-4'>
                     <a href="https://github.com/Dumanbruh" target="_blank" rel="noopener noreferrer">
